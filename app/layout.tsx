@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Playfair_Display_SC  } from 'next/font/google'
+import { Poppins, Playfair_Display_SC } from 'next/font/google';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "ksunnwy",
   description: "your best frontend developer",
   icons: {
-    icon: '/favicon.png', 
+    icon: '/favicon.png',
   },
   openGraph: {
     images: [
@@ -18,11 +18,10 @@ export const metadata: Metadata = {
       },
     ],
   },
-
 };
 
-const poppins = Poppins({ weight: "400" })
-const playfair_Display_SC = Playfair_Display_SC({ weight: "400" })
+const poppins = Poppins({ weight: "400", subsets: ['latin', 'latin-ext'] });
+const playfair_Display_SC = Playfair_Display_SC({ weight: "400", subsets: ['cyrillic', 'latin', 'latin-ext', 'vietnamese'] });
 
 export default function RootLayout({
   children,
@@ -31,8 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${playfair_Display_SC.className} antialiased`}
- >
+      <body className={`${poppins.className} ${playfair_Display_SC.className} antialiased`}>
         {children}
       </body>
     </html>

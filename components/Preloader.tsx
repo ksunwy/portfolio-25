@@ -83,7 +83,7 @@ const Preloader = ({ isLoaded }: { isLoaded: boolean }) => {
             ></video>
             <div className="flex flex-col gap-3 items-center justify-center absolute left-1/2 -translate-x-1/2 bottom-12">
                 <span ref={percentDisplayRef} className='text-[#171717] text-3xl'>{percentRef.current}%</span>
-                <span ref={textRef} className="text-[#171717] text-xl font-poppins">{strings[0]}</span>
+                <span ref={textRef} className="text-[#171717] text-xl font-poppins text-center">{strings[0]}</span>
             </div>
         </div>
     );

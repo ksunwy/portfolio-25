@@ -2,8 +2,9 @@
 
 const Mail = ({ width, height }: { width: string, height: string }) => {
     return (
-        <svg width={width} height={height} viewBox="0 0 45 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 5.69401V32.0273C1 32.5796 1.44772 33.0273 2 33.0273H43C43.5523 33.0273 44 32.5796 44 32.0273V5.69401M1 5.69401V2.02734C1 1.47506 1.44772 1.02734 2 1.02734H43C43.5523 1.02734 44 1.47506 44 2.02734V5.69401M1 5.69401L21.5849 17.4177C21.8864 17.5894 22.2554 17.5926 22.5598 17.426L44 5.69401" stroke="white" strokeWidth="2" />
+        <svg width={width} height={height} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.11328 4.03125H20.1133C21.2133 4.03125 22.1133 4.93125 22.1133 6.03125V18.0312C22.1133 19.1313 21.2133 20.0312 20.1133 20.0312H4.11328C3.01328 20.0312 2.11328 19.1313 2.11328 18.0312V6.03125C2.11328 4.93125 3.01328 4.03125 4.11328 4.03125Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M22.1133 6.03125L12.1133 13.0312L2.11328 6.03125" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     )
 }
